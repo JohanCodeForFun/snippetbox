@@ -28,7 +28,7 @@ func main() {
 		// AddSource: true,
 	}))
 
-	db, err := oppenDB(*dsn)
+	db, err := openDB(*dsn)
 	if err != nil {
 		logger.Error(err.Error())
 		os.Exit(1)
@@ -55,7 +55,7 @@ func main() {
 	os.Exit(1)
 }
 
-func oppenDB(dsn string) (*sql.DB, error) {
+func openDB(dsn string) (*sql.DB, error) {
 	db, err := sql.Open("mysql", dsn)
 	if err != nil {
 		return nil, err

@@ -29,5 +29,8 @@
 ## Running Migrations
 To apply new migrations, simply add new SQL files to the `db/migrations` directory and run the Flyway migrate command.
 
+## Starting web server
+go run ./cmd/web
+
 ## Contributing
 When adding or modifying migrations, ensure they are numbered sequentially and tested locally before committing.

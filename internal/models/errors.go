@@ -9,5 +9,5 @@ var (
 
 	ErrInvalidCredentials = errors.New("models: invalid credentials")
 
-	ErrorDuplicateEmail = errors.New("models: duplicate email")
+	ErrDuplicateEmail = errors.New("models: duplicate email")
 )

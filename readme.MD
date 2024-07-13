@@ -32,5 +32,8 @@ To apply new migrations, simply add new SQL files to the `db/migrations` directo
 ## Starting web server
 go run ./cmd/web
 
+## Running tests
+go test -v ./cmd/web
+
 ## Contributing
 When adding or modifying migrations, ensure they are numbered sequentially and tested locally before committing.
